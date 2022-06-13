@@ -1,0 +1,40 @@
+.header {
+    height: 100px;
+    background: rgb(47, 191, 112);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, .35);
+
+    &__logo {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    .menu {
+        display: flex;
+
+        &__item {
+            list-style: none;
+
+            &+li {
+                margin-left: 10px;
+            }
+        }
+
+        &__link {
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(178, 71, 221);
+            transition: .15s;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+

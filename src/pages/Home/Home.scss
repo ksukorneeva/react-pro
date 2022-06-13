@@ -1,0 +1,62 @@
+.home {
+    margin-top: 30px;
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+
+        .card {
+            width: 100%;
+            border: #ccc 1px solid;
+            display: flex;
+            padding: 15px;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.25s;
+            border-radius: 14px;
+
+            &+.card {
+                margin-top: 20px;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+            
+            p {
+                font-size: 20px;
+            }
+
+            &__actions {
+                svg {
+                    transition: .15s;
+                    cursor: pointer;
+
+                    &:first-child {
+                        color: rgb(102, 233, 152);
+
+                        &:hover {
+                            color: rgb(57, 146, 91);
+                        }
+                    }
+
+                    &:last-child {
+                        color: rgb(233, 115, 102);
+
+                        &:hover {
+                            color: rgb(154, 67, 58);
+                        }
+                    }
+                    &+svg{
+                        margin-left: 5px;
+                    }
+
+                }
+
+            }
+        }
+
+
+
+    }
+}

@@ -1,0 +1,28 @@
+.field {
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+
+    input {
+        width: 100%;
+        padding: 5px 10px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #000;
+
+        &:focus~label, 
+        &:not(:placeholder-shown)~label {
+            top: -7px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    label {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        transition: .25s;
+    }
+}

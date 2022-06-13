@@ -1,0 +1,41 @@
+.btn {
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    transition: .25s;
+    border-radius: 5px;
+
+    &-primary {
+        background: rgb(102, 148, 233);
+        color: #fff;
+
+        &:hover {
+            background: rgb(74, 112, 182);
+        }
+    }
+
+    &-success {
+        background: rgb(102, 233, 152);
+        color: #fff;
+
+        &:hover {
+            background: rgb(57, 146, 91);
+        }
+    }
+
+    &-danger {
+        background: rgb(233, 115, 102);
+        color: #fff;
+
+        &:hover {
+            background: rgb(154, 67, 58);
+        }
+    }
+
+    &:disabled {
+        color: #000;
+        background: #ccc;
+        cursor: not-allowed;
+    }
+}
